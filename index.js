@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = require(__dirname + '/lib/cloudwatch');
+module.exports = require('./lib/cloudwatch');

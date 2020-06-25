@@ -1,25 +1,24 @@
 {
   "name": "artillery-plugin-cloudwatch",
-  "version": "0.0.4",
-  "description": "A plugin for artillery.io that records response data into cloudwatch.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html.",
+  "version": "0.1.0",
+  "description": "A plugin for artillery.io that records response data into CloudWatch.",
   "main": "index.js",
   "scripts": {
     "eslint": "./node_modules/.bin/eslint .",
-    "jshint": "./node_modules/.bin/jshint --exclude node_modules .",
     "unit": "./node_modules/.bin/mocha -r aws-sdk --recursive -R min tests",
     "test": "npm run unit && npm run eslint && npm run jshint",
     "publish": "./node_modules/.bin/np"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nordstrom/artillery-plugin-cloudwatch.git"
+    "url": "git+https://github.com/kwhitejr/artillery-plugin-cloudwatch.git"
   },
   "keywords": [
     "artillery",
     "cloudwatch",
     "plugin"
   ],
-  "author": "Erik Erikson <erik.m.erikson@nordstrom.com>, Greg Smith <greg.w.smith@nordstrom.com>",
+  "author": "Kevin White <kwhitejr@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/nordstrom/artillery-plugin-cloudwatch/issues"
@@ -31,9 +30,11 @@
   "devDependencies": {
     "aws-sdk": "^2.686.0",
     "chai": "^4.2.0",
-    "eslint": "^7.1.0",
-    "jshint": "^2.11.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-json": "^1.4.0",
     "mocha": "^7.2.0",
-    "np": "^6.2.3"
+    "mochawesome": "^6.1.1"
   }
 }
