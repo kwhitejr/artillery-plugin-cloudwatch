@@ -1,1 +1,4 @@
-module.exports = require('./lib/cloudwatch');
+/* eslint-disable */
+'use strict';
+
+module.exports = require(__dirname + '/lib/cloudwatch');
